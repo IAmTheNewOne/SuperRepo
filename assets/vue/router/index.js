@@ -1,7 +1,8 @@
 import { createWebHistory, createRouter } from "vue-router";
 import Home from "../views/Home.vue";
-import About from "../views/About.vue";
+import Tagebuch from "../views/Tagebuch.vue";
 import Imprint from "../views/Imprint.vue";
+import Test from "../views/Test.vue";
 
 const routes = [
   {
@@ -10,15 +11,20 @@ const routes = [
     component: Home,
   },
   {
-    path: "/about",
-    name: "About",
-    component: About,
+    path: "/tagebuch",
+    name: "Tagebuch",
+    component: Tagebuch,
   },
   {
     path: "/imprint",
     name: "Imprint",
     component: Imprint,
   },
+  {
+    path: "/test",
+    name: "Test",
+    component: Test,
+  }
 ];
 
 const router = createRouter({

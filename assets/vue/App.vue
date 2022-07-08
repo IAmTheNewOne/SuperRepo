@@ -1,13 +1,31 @@
 <template>
-  <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+  <div class="container">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <router-link class="navbar-brand" to="/">
+        App
+      </router-link>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon" />
+      </button>
+      <div id="navbarNav" class="collapse navbar-collapse">
+        <ul class="navbar-nav">
+          <router-link class="nav-item" tag="li" to="/about" active-class="active">
+            <a class="nav-link">About</a>
+          </router-link>
+            <router-link class="nav-item" tag="li" to="/imprint" active-class="active">
+            <a class="nav-link">Imprint</a>
+          </router-link>
+        </ul>
+      </div>
+    </nav>
+
+    <router-view />
   </div>
-  <router-view />
 </template>
 
 <script>
 export default {
-  name: "App"
-};
+  name: "App",
+}
 </script>

@@ -6,10 +6,10 @@ use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
-class IndexController extends AbstractController
+class IndexVueController extends AbstractController
 {
     /**
-     * @Route("/", name="app_index")
+     * @Route("/{vueRouting}", name="app_index_vue")
      * @return Response
      */
     public function index(): Response

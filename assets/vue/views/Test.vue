@@ -32,9 +32,12 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss">
+$my-base-color: #c6538c;
 
 .greeting {
   font-weight: bold;
+  color: $my-base-color;
 }
+
 </style>
